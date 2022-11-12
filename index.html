@@ -6,6 +6,7 @@
 <body>
 	<p>Learning JS witn in 50 Days, IN-SHA ALLAH</p>
 	<p id="demo"></p>
+	<!--  DAY 1 -->
 	<!-- JS OUTPUT -->
 	<script type="text/javascript">
 		// 1# common way to display data in html
@@ -19,5 +20,104 @@
 	</script>
 	<!-- 5# Printer [this is the only available option as js cann't access other device(machine) but only printer] -->
 	<button onclick="print()">Print this pasge</button>
+
+	<!--  DAY 2 -->
+	<!-- JS STATEMENT -->
+	<!-- # instruction are called statement, js program is list of statement.
+		 composed of: values, operators, expressions, keywords, comments
+		 # execute one by one, the same order as it written.
+	 -->
+
+	 <!--  JS VALUE -->
+	 <!-- Two type 
+	      1. literal(Fixed)[10, 10.5, "hello"] 
+	      2. variable [store data value, use keyword like var, let, const]
+		  var a; [declaration]
+		  a = 5; [assign] 
+	  -->
+
+	  <!-- OPERATORS -->
+	  <!-- arithmetic: +, -, *, /
+	  	   assignment: =
+	   -->
+
+	  <!-- LET & VAR -->
+	  <!-- var: we can declar it many time as we want
+	       var a = 5;
+	       var a = 2;
+
+	       let[same as val in kotlin]
+	       -> cann't be re redeclared
+	       -> must be declar before use
+	       let a = 5;
+	       a = 2; // not allowed 
+	   -->
+
+	   <!-- BLOCK SCOPE -->
+	   <!--
+	       { // global scope
+				{
+					// block scope
+					let x = 5;
+					var y = 3;
+				}
+				// x cann't be used here
+				// but y can be [read note#1]
+	       } 
+		[note#1: for that reasone 'let' introduced into js]
+	    -->
+
+	    <!-- REDECLARING -->
+	    <!-- 
+	    	EXAMPLE#1
+		    	let x = 1;     // allowed
+		    	x = 2;         // not allowed
+
+		    EXAMPLE#2
+		    	let x = 1;     // allowed
+		    	{
+					let x = 2; // allowed
+					x = 3;     // not allowed
+		    	}
+
+		    	{
+					let x = 3; // allowed
+					x = 4;     // not allowed
+		    	}
+
+		    EXAMPLE#3
+		    	let x = 1;     // allowed
+		    	{
+					let x = 2; // allowed
+		    	}
+
+		    	{
+					let x = 3; // allowed
+		    	}
+	     -->
+
+
+	     <!-- HOST -->
+	     <!-- 
+	        var:
+	     	|``` [in compile time, it hosted like 
+	     	|    var x;
+	     	|    x = undifined]
+	     	|
+	     	|    | x = 10;
+	     	|    | var x;
+	     	|--{ | console.log(x);  [output: 10]
+
+
+	     	let:
+	     	|``` [in compile time, it hosted like
+	     	|    let x;]
+	     	|    
+			|
+			|    | x = 10;
+			|    | let x;
+			|--{ | console.log(x);  [output: error]
+			
+	      -->
 </body>
 </html>
