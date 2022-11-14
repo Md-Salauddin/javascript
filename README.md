@@ -29,10 +29,10 @@ var: we can declar it many time as we want
 
 ```bash
   var a = 5;
-  a = 10;
+  var a = 10;
 ```
 
-let[same as val in kotlin]
+let
 
 * cann't be redeclared
 * must be declar before use
@@ -58,18 +58,18 @@ note#1: for that reasone 'let' introduced into js
 Example 1#
 ```bash
    let x = 1; //allowed
-   x = 2; //not allowed
+   let x = 2; //not allowed
 ```
 Example 2#
 ```bash
    let x = 1; // allowed
   {
 	 let x = 2; // allowed
-	 x = 3; // not allowed
+	 let x = 3; // not allowed
   }
   {
 	 let x = 3; // allowed
-	 x = 4; // not allowed
+	 let x = 4; // not allowed
   }
 ```
 
