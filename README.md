@@ -170,7 +170,8 @@ Let
 	|    | x = 10;
 	|    | let x;
 	|--{ | console.log(x);  [output: ReferenceError]
-	
+````
+
 Const
 ```bash
         |``` [in compile time, it hosted(in top) like 
@@ -180,3 +181,4 @@ Const
 	|    
 	|    | console.log(x);  [output: ReferenceError]
 	|--{ | const x = 10;
+```
