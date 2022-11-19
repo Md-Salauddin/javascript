@@ -49,7 +49,7 @@
 
 ```javascript
   a = 2;
-  b = "3"
+  b = "3";
   console.log(a !== 2); [output: true]
   console.log(a !== 1); [output: false]
   console.log(b !== "2"); [output: false]
