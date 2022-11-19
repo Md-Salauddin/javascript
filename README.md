@@ -29,3 +29,23 @@ evaluate left to right
   const words = ["apple", "banana", "cat"]; 
   console.log(words[0]); [output: apple]
 ```
+
+## Object
+
+```javascript
+  const student = {name: "Abu", age: "28"}; 
+```
+
+## Undefined
+without value, the value undefined and also type is undefined
+
+```javascript
+  let name; // value is undefined, type is undefined 
+```
+
+## Empty value
+
+```javascript
+  let car = ""; // the value is "", the typeof is "string" 
+```
+
