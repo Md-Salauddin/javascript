@@ -56,3 +56,17 @@
   console.log(b !== 3); [output: false]
 ```
 
+## Logical
+&&, ||, !
+
+## Type
+* typeof [Returns the type of a variable]
+
+```javascript
+  a = 2;
+  b = "3"
+  console.log(typeof(a)); [output: number]
+  console.log(typeof(b)); [output: string]
+```
+
+* instanceof  [Returns true if an object is an instance of an object type]
