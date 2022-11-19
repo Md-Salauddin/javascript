@@ -70,3 +70,16 @@
 ```
 
 * instanceof  [Returns true if an object is an instance of an object type]
+
+
+## Bitwise 
+&, |, ~, ^, <<, >>, >>> [unsign right shift]
+
+
+## Operators & Operands
+The numbers (in an arithmetic operation) are called operands.
+
+| operand  | operator | operand |
+| -------- | -------- |-------- |
+|    100   |     +    |  100    |
+
