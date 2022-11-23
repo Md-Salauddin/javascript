@@ -20,5 +20,5 @@
 	// return undefined
   }
 
-  console.log(add(2,2)); [output: hello undefined]
+  console.log(add(2,2)); // [output: hello undefined]
 ```
