@@ -12,3 +12,12 @@
 
 * Parameters are listed inside the parentheses ()
 * Arguments are the values received by the function 
+
+```javascript
+  function add(a, b) {
+	  console.log("hello");
+	  // by default return undefined                              
+  }
+
+  console.log(add(2,2)); [output: hello undefined]
+```
