@@ -3,7 +3,7 @@
 
 ```javascript
   function functionName(param1, param2, ...) {
-    //body
+    // body
     // returnType or none [for none, by default return undefined]
   }
   // function calling(invocation)
@@ -15,8 +15,9 @@
 
 ```javascript
   function add(a, b) {
-	  console.log("hello");
-	  // by default return undefined                              
+	console.log("hello");
+	// by default return undefined   
+	// return undefined
   }
 
   console.log(add(2,2)); [output: hello undefined]
