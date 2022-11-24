@@ -4,12 +4,21 @@
 	<title>Learning JS</title>
 </head>
 <body>
+	
 	<p>Learning JS witn in 50 Days, IN-SHA ALLAH</p>
 	<!-- show into p(demo) tag -->
 	<button onclick="document.getElementById('demo').innerHTML = Date()">The time is ?</button>
 	<!-- show into Time?-->
 	<button onclick="this.innerHTML = Date()">Time ?</button>
+	<button onclick="showTime()">From Function ?</button>
 	<p id="demo"></p>
+	
+	<!-- using function -->
+	<script>
+		function showTime() {
+			document.getElementById('demo').innerHTML = Date()
+		}
+	</script>	
 	
 </body>
 </html>
