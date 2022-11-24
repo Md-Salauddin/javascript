@@ -62,9 +62,15 @@ example of some events:
 * button was clicked
 
 ```javascript
-  // syntax
-  <element eventName="js code">
+                 // event-handler
+		        ^
+  <element eventName="js code">  // syntax
 ```
+
+# Common HTML Events
+
+onchange, onclick, onmouseover, onmouseout,
+onkeydown, onload so on ..
 
 
 
