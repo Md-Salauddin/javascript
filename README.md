@@ -52,4 +52,19 @@ note#1 this -> owner of the function, getName() function owner is student
   console.log(typeof y); // [output: object]
 ```
 
+# Event
+
+When somethong happen in html elements, js can catch/react as event
+
+example of some events:
+* web page loading finished
+* input field was changed
+* button was clicked
+
+```javascript
+  // syntax
+  <element eventName="js code">
+```
+
+
 
