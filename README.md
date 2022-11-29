@@ -1,4 +1,4 @@
-#String object
+# String object
 
 ```javascript
 let x = "hello"; // (string) literal type
