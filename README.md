@@ -14,7 +14,7 @@ console.log(name.length);
 ## String slice(a, b)
 a = start position, b = end position
 
-**note** b must be grater than a
+**Note#** b must be grater than a
 
 ```javascript
   let str = "Apple, Banana, Kiwi"; 
@@ -22,7 +22,7 @@ a = start position, b = end position
   console.log(str.slice(-12, -6)); // [output: banana]
 ```
 
-**note** for short cut start counting with 1 to last
+**Note#** for short cut start counting with 1 to last
 
 ```javascript
 -------------------------------------------------------
