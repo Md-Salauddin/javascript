@@ -87,7 +87,22 @@ Remove all white space from both side of a String
 
 ```javascript
   let str = "     Hello World! ";
-  console.log(str.trim());  // [output: Hello World!]
+  console.log(str.trim());         // [output: Hello World!]
 ```
 
+# Extracting characters
 
+charAt(position)
+
+```javascript
+  let str = "Hello World!";
+  console.log(str.charAt(0));      // [output: H]
+```
+
+charCodeAt(position) </br>
+**returns** a UTF-16 code (an integer between 0 and 65535)
+
+```javascript
+  let str = "Hello World!";
+  console.log(str.charAt(0));      // [output: 72]
+```
