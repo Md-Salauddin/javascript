@@ -14,7 +14,8 @@ console.log(name.length);
 ## String slice(a, b)
 a = start position, b = end position
 
-**Note#** b must be grater than a
+**Note 1#** b must be grater than a </br>
+**Note 2#** if we pass one param, it will start from that position and select till the end
 
 ```javascript
   let str = "Apple, Banana, Kiwi"; 
@@ -35,3 +36,20 @@ a = start position, b = end position
 //7 to 13   = banana
 //-12 to -6 = banana
 ```
+
+## String substring(a, b)
+
+substring is similar to slice(), but not supported negative value. if we provide any, it would be zero.
+
+```javascript
+  let str = "Apple, Banana, Kiwi"; 
+  console.log(str.substring(7, 13));       // [output: Banana]
+  // act as str.substring(0)
+  console.log(str.substring(-12));         // [output: Apple, Banana, Kiwi]
+  console.log(str.substring(7));           // [output: Banana, Kiwi]
+``` 
+
+
+
+
+
