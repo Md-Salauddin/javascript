@@ -90,19 +90,40 @@ Remove all white space from both side of a String
   console.log(str.trim());         // [output: Hello World!]
 ```
 
-# Extracting characters
+## Extracting characters
 
-charAt(position)
+**charAt(position)**
 
 ```javascript
   let str = "Hello World!";
   console.log(str.charAt(0));      // [output: H]
 ```
 
-charCodeAt(position) </br>
-**returns** a UTF-16 code (an integer between 0 and 65535)
+**charCodeAt(position)**  </br>
+returns a **UTF-16 code** (an integer between 0 and 65535)
 
 ```javascript
   let str = "Hello World!";
   console.log(str.charAt(0));      // [output: 72]
+```
+
+**Property Access**
+
+* Strings look like arrays (but not)
+* If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+* It is read only. str[0] = "A" gives no error (but does not work!)
+
+```javascript
+  let text = "HELLO WORLD";
+  console.log(text[1]);            // [output: E]
+  text[0] = "A";                   // Gives no error, but does not work
+```
+
+## split()
+Without giving any param it will return the whole text as an array.
+
+```javascript
+  let text = "Hello world";
+  console.log(text.split());       // [output: [ ['Hello world'] ]
+  console.log(text.split(""));     // [output: [ [ 'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd' ] ]
 ```
