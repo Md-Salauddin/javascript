@@ -11,7 +11,7 @@ object by the compiler and is able to access the properties of the String class
 console.log(name.length);
 ```
 
-## String slice(a, b)
+## slice(a, b)
 a = start position, b = end position
 
 **Note 1#** b must be grater than a </br>
@@ -37,15 +37,27 @@ a = start position, b = end position
 //-12 to -6 = banana
 ```
 
-## String substring(a, b)
+## substring(a, b)
 
-substring is similar to slice(), but not supported negative value. if we provide any, it would be zero.
+substring is similar to slice(), but not supported negative value. if we provide any, it would be **zero**.
 
 ```javascript
   let str = "Apple, Banana, Kiwi"; 
   console.log(str.substring(7, 13));       // [output: Banana]
   // act as str.substring(0)
   console.log(str.substring(-12));         // [output: Apple, Banana, Kiwi]
+  console.log(str.substring(7));           // [output: Banana, Kiwi]
+``` 
+
+## substr(a, b)
+
+substr is similar to slice(), but b specifies the **length** of the extracted part.
+
+```javascript
+  let str = "Apple, Banana, Kiwi"; 
+  console.log(str.substring(7, 6));        // [output: Banana]
+  console.log(str.substring(-4, 2));       // [output: Ki]
+  console.log(str.substring(-4));          // [output: Banana, Kiwi]
   console.log(str.substring(7));           // [output: Banana, Kiwi]
 ``` 
 
