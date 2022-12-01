@@ -79,7 +79,15 @@ substr is similar to slice(), but b specifies the **length** of the extracted pa
   console.log(str2.replace("xxx", "Alam")); // [output: Hello, my name is Mr.xxx]
 ```
 
+**Note 3#** String are immutable(cannot be changed), only replaced.
 
+## trim()
 
+Remove all white space from both side of a String
+
+```javascript
+  let str = "     Hello World! ";
+  console.log(str.trim());  // [output: Hello World!]
+```
 
 
