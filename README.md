@@ -61,6 +61,24 @@ substr is similar to slice(), but b specifies the **length** of the extracted pa
   console.log(str.substring(7));           // [output: Banana, Kiwi]
 ``` 
 
+## replace()
+
+* replace() doesnot change main string and return new String
+* replaces only the first match
+* case sensitive
+
+```javascript
+  let str = "He is a good boy";
+  console.log(str.replace("good", "bad"));  // [output: He is a bad boy]
+  console.log(str);                         // [output: He is a good boy]
+  
+  let str1 = "Hello, my name is Mr. XXX XXX"; 
+  console.log(str1.replace("XXX", "Alam")); // [output: Hello, my name is Mr. Alam XXX]
+  
+  let str2 = "Hello, my name is Mr. XXX"; 
+  console.log(str2.replace("xxx", "Alam")); // [output: Hello, my name is Mr.xxx]
+```
+
 
 
 
