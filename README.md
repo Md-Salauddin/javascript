@@ -1,4 +1,4 @@
-# Back Tics Syntex(` `) 
+# Back Tics Syntex(``) 
 
 * can use both single and double quotes
 * multiline string
