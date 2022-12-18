@@ -40,3 +40,34 @@ console.log(x - y)  // [output: 90]
 console.log(x * y)  // [output: 1000]
 console.log(x / y)  // [output: 10]
 ```
+
+## NaN: Not a Number
+
+arithmetic with a non-numeric string will result in NaN
+
+```javascript
+  console.log(100 / "Apple"); // [output: nan]
+```
+
+**isNaN()** to find out if a value is a not a number
+
+```javascript
+  console.log(isNaN(100 / "Apple")); // [output: true]
+  console.log(isNaN(100 / "10"));    // [output: fasle]
+```
+
+**Note #0** arithmetic operation with NaN, result will be also NaN
+
+```javascript
+  console.log("100" / NaN);  // [output: NaN]
+  // NaN is also a number type
+  console.log(typeof NaN);   // [output: number]
+```
+
+**Infinity** outside the largest possible number. </br>
+Division by 0 (zero) also generates Infinity. </br>
+**typeof** Infinity also returns number. </br>
+
+```javascript
+console.log(typeof Infinity); // [output: number]
+```
