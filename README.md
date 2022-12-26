@@ -4,7 +4,7 @@
 
 ```javascript
   let x = 123;
-  console.log(typeof x); // [output: number]
+  console.log(typeof x);    // [output: number]
   let newX = x.toString();
   console.log(typeof newX); // [output: string]
 ```
@@ -17,9 +17,9 @@
   let x = 9000;
   let y = 9.2;
   
-  console.log(x.toExponential()); // [output: 9e+3]
+  console.log(x.toExponential());  // [output: 9e+3]
   console.log(x.toExponential(1)); // [output: 9.0e+3]
-  console.log(y.toExponential()); // [output: 9.2e+0]
+  console.log(y.toExponential());  // [output: 9.2e+0]
   console.log(y.toExponential(2)); // [output: 9.20e+0]
 ```
 
@@ -28,7 +28,7 @@
 ```javascript
   let x = 9.567;
 
-  console.log(x.toFixed()); // [output: 10]
+  console.log(x.toFixed());  // [output: 10]
   console.log(x.toFixed(1)); // [output: 9.6]
   console.log(x.toFixed(2)); // [output: 9.57] ***perfect for working with money
   console.log(x.toFixed(5)); // [output: 9.56700]
@@ -41,7 +41,7 @@
 ```javascript
   let x = 9.567;
   
-  console.log(x.toPrecision()); // [output: 9.567]
+  console.log(x.toPrecision());  // [output: 9.567]
   console.log(x.toPrecision(2)); // [output: 9.6] 
   console.log(x.toPrecision(5)); // [output: 9.5670]
 ```
@@ -54,21 +54,50 @@
 * **parseInt()** -> returns a whole number
 </br> not **number methods** but global JavaScript methods, means can't access **.methodName**
 
-**Number**
+**Number()**
 
 ```javascript
-  console.log(Number(true)); // [output: 1]
-  console.log(Number(false)); // [output: 0]
-  console.log(Number("10")); // [output: 10]
-  console.log(Number("  10")); // [output: 10]
-  console.log(Number("10  ")); // [output: 10]
+  console.log(Number(true));    // [output: 1]
+  console.log(Number(false));   // [output: 0]
+  console.log(Number("10"));    // [output: 10]
+  console.log(Number("  10"));  // [output: 10]
+  console.log(Number("10  "));  // [output: 10]
   console.log(Number(" 10  ")); // [output: 10]
   console.log(Number("10.33")); // [output: 10.33]
   console.log(Number("10,33")); // [output: NaN]
   console.log(Number("10 33")); // [output: NaN]
-  console.log(Number("John")); // [output: NaN]
+  console.log(Number("John"));  // [output: NaN]
+```
+
+**parseInt()**
+* parses a string and returns a whole number[not decimal]
+* spaces are allowed but Only the first number is returned
+
+```javascript
+  console.log(parseInt("-10"));      // [output: -10]
+  console.log(parseInt("-10.33"));   // [output: -10]
+  console.log(parseInt("10"));       // [output: 10]
+  console.log(parseInt("10.33"));    // [output: 10]
+  console.log(parseInt("10 20 30")); // [output: 10]
+  console.log(parseInt("10 years")); // [output: 10]
+  console.log(parseInt("years 10")); // [output: NaN]
 ```
 
 
+
+**parseFloat()**
+* parses a string and returns a number
+* spaces are allowed but Only the first number is returned
+
+
+```javascript
+console.log(parseFloat("-10"));      // [output: -10]
+console.log(parseFloat("-10.33"));   // [output: -10.33]
+console.log(parseFloat("10"));       // [output: 10]
+console.log(parseFloat("10.33"));    // [output: 10]
+console.log(parseFloat("10 20 30")); // [output: 10]
+console.log(parseFloat("10 years")); // [output: 10]
+console.log(parseFloat("years 10")); // [output: NaN]
+```
 
 
