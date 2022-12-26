@@ -46,6 +46,28 @@
   console.log(x.toPrecision(5)); // [output: 9.5670]
 ```
 
+## Converting Variables to Numbers
+
+3 JavaScript methods(convert a variable to a number): </br>  
+* **Number()**	-> Returns a number 
+* **parseFloat()**	-> returns a floating point number
+* **parseInt()** -> returns a whole number
+</br> not **number methods** but global JavaScript methods, means can't access **.methodName**
+
+**Number**
+
+```javascript
+  console.log(Number(true)); // [output: 1]
+  console.log(Number(false)); // [output: 0]
+  console.log(Number("10")); // [output: 10]
+  console.log(Number("  10")); // [output: 10]
+  console.log(Number("10  ")); // [output: 10]
+  console.log(Number(" 10  ")); // [output: 10]
+  console.log(Number("10.33")); // [output: 10.33]
+  console.log(Number("10,33")); // [output: NaN]
+  console.log(Number("10 33")); // [output: NaN]
+  console.log(Number("John")); // [output: NaN]
+```
 
 
 
