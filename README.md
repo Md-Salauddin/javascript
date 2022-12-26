@@ -23,4 +23,30 @@
   console.log(y.toExponential(2)); // [output: 9.20e+0]
 ```
 
+**toFixed()** returns a string, with the number written with a specified number of decimals
+
+```javascript
+  let x = 9.567;
+
+  console.log(x.toFixed()); // [output: 10]
+  console.log(x.toFixed(1)); // [output: 9.6]
+  console.log(x.toFixed(2)); // [output: 9.57] ***perfect for working with money
+  console.log(x.toFixed(5)); // [output: 9.56700]
+```
+
+**toPrecision()**
+* returns a string, with a number written with a specified length
+* not only behind the decimal point but also the whole length
+
+```javascript
+  let x = 9.567;
+  
+  console.log(x.toPrecision()); // [output: 9.567]
+  console.log(x.toPrecision(2)); // [output: 9.6] 
+  console.log(x.toPrecision(5)); // [output: 9.5670]
+```
+
+
+
+
 
