@@ -22,7 +22,7 @@ elements can store:
   console.log(elements[3]); // [output: JS in 30 Day's]
 ```
 
-**Arrays** are Objects
+**arrays** are objects
 
 ```javascript
   console.log(typeof elements) // [output: object]
@@ -32,4 +32,31 @@ elements can store:
 
 ```javascript
   console.log(names[names.length - 1])
+```
+
+**push & forEach** method
+
+```javascript
+  function  print(value) {
+    console.log(value);
+  }
+
+  elements.push("Md.")
+  elements.forEach(print); 
+  // [output:
+  // kawser
+  // sk
+  // 100
+  // JS in 30 Day's
+  // Md.
+  //]
+```
+
+**adding elements with high indexes can create undefined "holes" in an array**
+
+```javascript
+const fruits = ["Banana", "Orange", "Apple"];
+fruits[6] = "Lemon";
+
+console.log(fruits) // [output: [ 'Banana', 'Orange', 'Apple', <3 empty items>, 'Lemon' ]]
 ```
