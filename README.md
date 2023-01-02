@@ -80,7 +80,7 @@ will produce incorrect results.
 
 1. const names = [40]; & </br>
 2. const names = new Array(40); </br>
-- is not the same as </br>
+   *is not the same as* </br>
 
 * first one create an array with one element
 * second one create an array with 40 undefined elements
